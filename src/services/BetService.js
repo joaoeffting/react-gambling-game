@@ -16,13 +16,17 @@ export const BetService = {
      * 
      */
     async loadBets() {
-        const loadedData = localStorage.getItem('lastLoadedTime');
+        let loadedData;
+        if (localStorage)
+            loadedData = localStorage.getItem('lastLoadedTime');
         const diference = differenceInMinutes(new Date(), loadedData);
-        if (diference >= TIME_TO_BE_ABLE_TO_LOAD_MORE_DATA_IN_MINUTES) {
+        if (diference >= TIME_TO_BE_ABLE_TO_LOAD_MORE_DATA_IN_MINUTES || !localStorage) {
             const response = await axios.get(URL);
             if (response.data.liveEvents) {
-                localStorage.setItem('lastLoadedTime', new Date());
-                localStorage.setItem('liveEvents', JSON.stringify(response.data.liveEvents));
+                if (localStorage) {
+                    localStorage.setItem('lastLoadedTime', new Date());
+                    localStorage.setItem('liveEvents', JSON.stringify(response.data.liveEvents));
+                }
                 return response.data.liveEvents;
             }
             return []

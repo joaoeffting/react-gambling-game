@@ -67,9 +67,12 @@ export const BetList = ({ liveEvents }) => {
     const events = liveEvents.map(event => {
         return (
             <BetContainer key={event.event.name}>
-                <Points>
-                    {event.liveData.score.home} - {event.liveData.score.away}
-                </Points>
+                {
+                    event.liveData.score && 
+                    <Points>
+                        {event.liveData.score.home} - {event.liveData.score.away}
+                    </Points>
+                }
                 <Infos>
                     <SportImage src={ICONS[event.event.sport] || deFaultIcon} alt="sport type icon" />
                     {event.event.homeName} - {event.event.awayName}
