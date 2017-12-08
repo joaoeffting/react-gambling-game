@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header match snapshot 1`] = `
+<header
+  className="sc-bdVaJa ezWSqq"
+>
+  <div
+    className="sc-bwzfXH gRZoIT"
+  >
+    Unibet
+  </div>
+</header>
+`;

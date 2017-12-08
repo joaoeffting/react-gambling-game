@@ -1,0 +1,16 @@
+body {
+	background: #333;
+	font-family: 'RobotoRegular','Roboto','Droid Sans','Helvetica Neue','Segoe UI','Segoe','Open Sans','Helvetica','Arial',sans serif;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0;
+	padding: 0
+}
+
+.slick-slider {
+    width: 623px;
+}
+
+.slick-initialized .slick-slide {
+    display: flex !important;
+}

@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bet match snapshot 1`] = `
+<div
+  className="sc-bZQynM hOnkKl"
+>
+  <article
+    className="sc-gzVnrw kBMDxl"
+  >
+    <h1
+      className="sc-htoDjs bSLqlL"
+    >
+      Live matches
+    </h1>
+    <p
+      className="sc-dnqmqq ylglt"
+    >
+      Here is a list of matches that are live right now.
+    </p>
+    <aside
+      className="sc-iwsKbI hFdZDs"
+    >
+      <h2
+        className="sc-gZMcBi hHfMSJ"
+      >
+        Live betting
+      </h2>
+      <p>
+        Place your bets as the action unfolds. We offer a wide selection of live betting events and you can place both single and combination bets.
+      </p>
+      <p>
+        You will be able to see an in-play scoreboard with the current result and match stats, while on selected events you will also be able to watch the action live with Unibet TV on the desktop site.
+      </p>
+    </aside>
+    <div>
+       Loading Bets ... 
+    </div>
+  </article>
+</div>
+`;

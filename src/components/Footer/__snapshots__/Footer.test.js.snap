@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer match snapshot 1`] = `
+<footer
+  className="sc-bdVaJa dvzCsQ"
+>
+  <div
+    className="sc-bwzfXH cFmTGB"
+  >
+    <p
+      className="sc-htpNat htkWye"
+    >
+      © 1997-2015, Unibet. All rights reserved.
+    </p>
+  </div>
+</footer>
+`;
