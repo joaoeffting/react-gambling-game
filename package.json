@@ -9,7 +9,8 @@
     "react-dom": "^16.2.0",
     "react-slick": "^0.15.4",
     "react-test-renderer": "^16.2.0",
-    "styled-components": "^2.2.4"
+    "styled-components": "^2.2.4",
+    "toastr": "^2.1.4"
   },
   "devDependencies": {
     "react-scripts": "1.0.17"

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { BetService } from '../../services/BetService';
 import { BetList } from './BetList';
+import toastr from 'toastr';
+import 'toastr/build/toastr.min.css';
 
 const BetContent = styled.div`
 	width: 900px;
@@ -52,8 +54,8 @@ export class Bet extends Component {
         try {
             let liveEvents = await BetService.loadBets();
             this.setState({ liveEvents });
-        } catch (e) {
-            console.log(e);
+        } catch (error) {
+            toastr.error(error.message, 'Error!')
         }
     }
     render() {
